@@ -1,0 +1,12 @@
+sources:
+  - name: jaffle_shop
+    database: dbt-tutorial
+    schema: jaffle_shop # if not specified, it assumes the schema is the same as the "name"
+    tables:
+      - name: customers
+      - name: orders
+  - name: stripe
+    database: dbt-tutorial
+    schema: stripe
+    tables:
+      - name: payment
